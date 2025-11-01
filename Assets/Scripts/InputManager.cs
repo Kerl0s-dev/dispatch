@@ -11,11 +11,17 @@ public class InputManager : MonoBehaviour
     InputAction LookAction;
     InputAction RunAction;
     InputAction CrouchAction;
+    InputAction FlashlightAction;
+    InputAction ReffillAction;
+    InputAction PauseAction;
 
     public static Vector2 Move;
     public static Vector2 Look;
     public static bool Run;
     public static bool Crouch;
+    public static bool Flashlight;
+    public static bool Refill;
+    public static bool Pause;
 
     // Awake is called when the script instance is being loaded
     void Awake()
@@ -35,6 +41,9 @@ public class InputManager : MonoBehaviour
         LookAction = PlayerInput.actions["Look"];
         RunAction = PlayerInput.actions["Sprint"];
         CrouchAction = PlayerInput.actions["Crouch"];
+        FlashlightAction = PlayerInput.actions["Flashlight"];
+        ReffillAction = PlayerInput.actions["Refill"];
+        PauseAction = PlayerInput.actions["Pause"];
     }
 
     // Update is called once per frame
@@ -45,5 +54,9 @@ public class InputManager : MonoBehaviour
 
         Run = RunAction.IsPressed();
         Crouch = CrouchAction.IsPressed();
+
+        Flashlight = FlashlightAction.WasPressedThisFrame();
+        Refill = ReffillAction.WasPressedThisFrame();
+        Pause = PauseAction.WasPressedThisFrame();
     }
 }

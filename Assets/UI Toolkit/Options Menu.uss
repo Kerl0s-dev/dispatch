@@ -1,0 +1,10 @@
+:root {
+}
+
+Toggle {
+}
+
+VisualElement > .unity-toggle > .unity-toggle__input > #unity-checkmark {
+    width: 45px;
+    height: 45px;
+}

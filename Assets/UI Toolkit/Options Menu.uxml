@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Options%20Menu.uss?fileID=7433441132597879392&amp;guid=38db36240075cc840ace17f7a6060840&amp;type=3#Options Menu" />
+    <ui:VisualElement name="Options-Menu-Panel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.59); justify-content: center; align-items: center; display: none;">
+        <ui:Toggle label="VHS Effect" value="true" name="VHS-Toggle" toggle-on-label-click="false" focusable="false" style="font-size: 60px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>
